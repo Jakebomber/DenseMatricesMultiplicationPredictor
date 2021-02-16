@@ -38,5 +38,6 @@ int main() {
 		cout << "A" << i << matricesBrackets[i];
 	}
 	//sync
+
 	fclose(s1);
 }
