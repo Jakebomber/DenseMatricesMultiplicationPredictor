@@ -37,7 +37,7 @@ int main() {
 	for (int i = 1; i < matricesDimensionsData.size(); i++) {
 		cout << "A" << i << matricesBrackets[i];
 	}
-	//sync!
+	//sync!1
 
 	fclose(s1);
 }
