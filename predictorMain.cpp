@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 vector<int> matricesDimensionsData;
-//vector<string> matricesBrackets;
+vector<string> matricesBrackets;
 int p = 0;
 map<int, map<int, int> > a;
 long long int predict(vector<int> mdd, int i_start, int i_end,int status) {
@@ -34,7 +34,7 @@ int main() {
 		return 0;
 	}
 	int n;
-	//while (cin >> n)matricesDimensionsData.push_back(n), matricesBrackets.push_back("");
+	while (cin >> n)matricesDimensionsData.push_back(n), matricesBrackets.push_back("");
 	for (auto x : matricesDimensionsData)cout << x << endl;
 	cout << predict(matricesDimensionsData, 1, matricesDimensionsData.size() - 1,0);
 	//cout << endl << matricesBrackets[0];
