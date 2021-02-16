@@ -41,5 +41,6 @@ int main() {
 	//for (int i = 1; i < matricesDimensionsData.size(); i++) {
 	//	cout << "A" << i << matricesBrackets[i];
 	//}
+
 	fclose(s1);
 }
