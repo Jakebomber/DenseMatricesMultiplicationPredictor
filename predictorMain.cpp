@@ -7,9 +7,11 @@ vector<int> matricesDimensionsData;
 vector<string> matricesBrackets;
 int p = 0,*q;
 map<int, map<int, int> > a;
+
 bool cmp(char a, char b) {
 	return a > b;
 }
+
 void displayResult() {
 	cout << endl << matricesBrackets[0];
 	for (int i = 1; i < *q; i++) {
@@ -17,6 +19,7 @@ void displayResult() {
 	}
 	cout << endl;
 }
+
 long long int predict(vector<int> mdd, int i_start, int i_end,int status) {
 	if (a[i_start][i_end] != 0)return a[i_start][i_end];
 	if (i_start == i_end) return 0;
@@ -36,6 +39,7 @@ long long int predict(vector<int> mdd, int i_start, int i_end,int status) {
 	a[i_start][i_end] = min;
 	return min;
 }
+
 int main() {
 	//mtg:matrices group file
 	FILE* s1;
