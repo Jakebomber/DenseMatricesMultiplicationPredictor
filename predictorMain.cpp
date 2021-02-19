@@ -94,7 +94,6 @@ int main() {
 	//	sort(x.begin(), x.end(),cmp);
 	//}
 
-
 	delete q;
 	fclose(s1);
 }
